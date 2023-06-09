@@ -6,9 +6,9 @@ const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
 const enrollmentButton = document.getElementById("enrollment");
 
-enrollmentButton.addEventListener("click", (e) => {
-  console.log("Clicking this ");
-})
+// enrollmentButton.addEventListener("click", (e) => {
+//   console.log("Clicking this ");
+// })
 
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -20,30 +20,32 @@ loginButton.addEventListener("click", (e) => {
     password: password,
   }
 
-  fetch('http://localhost:9000/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(loginData)
-  })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        alert("You have successfully logged in.");
-        // window.location.href = "/home";
-      }
-      // else {
-      //   // loginErrorMsg.style.opacity = 1;
-      // }
-    })
-    .catch(error => {
-      console.log(error);
-    });
-
+  // fetch('http://localhost:9000/login', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   },
+  //   body: JSON.stringify(loginData)
+  // })
+  //   .then(response => response.json())
+  //   // .then(data => {
+  //   //   if (data.success) {
+  //   //     alert("You have successfully logged in.");
+  //       // window.location.href = "/home";
+  //       //
+  //     //     location.href = '/enrollment.html';
+  //     // }
+  //     // else {
+  //     //   // loginErrorMsg.style.opacity = 1;
+  //     // }
+  //   // })
+  //   .catch(error => {
+  //     console.log(error);
+  //   });
+  //
   if (username === "user" && password === "user") {
     // location.reload();
-    location.href = './enrollment.html';
+    location.href = '/enrollment.html';
   } else {
     loginErrorMsg.style.opacity = 1;
   }
