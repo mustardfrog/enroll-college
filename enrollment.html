@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Page</title>
+    <link rel="stylesheet" href="./enrollment.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+
+    <form action="">
+        <label for="course">Course:</label>
+        <select name="course" id="course">
+          <option value="bscs">Bachelor of Science Computer Science</option>
+          <option value="bsit">Bachelor of Science Information Technology</option>
+          <option value="bsm">Bachelor of Science Basic Medical Sciences</option>
+          <option value="bsba">Bachelor of Science Business Administration</option>
+        </select>
+        <br><br>
+      </form>
+
+      <br><br>
+
+        <label for="">Year: </label>
+        <select id="opts" onchange="showForm()">
+            <option value=""></option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+        </select>
+
+    <br><br>
+        <div id="f1" style="display:none">
+            <form name="form1">
+            <label for="year">Term: </label>
+                <select id="opts" onchange="showForm()">
+                    <option value=""></option>
+                    <option value="4">1st Term</option>
+                    <option value="5">2nd Term</option>
+                    <option value="6">3rd Term</option>
+                </select>
+            </form>
+            <br>
+        </div>
+    
+        <div id="f2" style="display:none">
+            <form name="form2">
+                <label for="year">Term: </label>
+                <select id="opts" onchange="showForm()">
+                    <option value=""></option>
+                    <option value="4">1st Term</option>
+                    <option value="5">2nd Term</option>
+                    <option value="6">3rd Term</option>
+                </select>
+            </form>
+            <br>
+        </div>
+        <div id="f3" style="display:none">
+            <form name="form">
+                <label for="year">Term: </label>
+                <select id="opts" onchange="showForm()">
+                    <option value=""></option>
+                    <option value="4">1st Term</option>
+                    <option value="5">2nd Term</option>
+                    <option value="2">3rd Term</option>
+                </select>
+            </form>
+            <br>
+        </div>
+
+        <div id="f4" style="display:  block">
+            <table >
+                <tr>
+                    <td>Subject</td>
+                    <td>Schedule</td>
+                    <td>
+                    </td>
+                </tr>
+                    <td>Filipino</td>
+                    <td>Monday</td>
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Filipino">
+                    </td>
+                </td>
+                <tr>
+                    <td>Math</td>
+                    <td>Tuesday</td>
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Math">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Wednesday</td>
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Science">
+                    </td>
+                </tr>
+                <tr>
+                    <td>PE</td>
+                    <td>Thursday</td>
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Araling Panlipunan</td>
+                    <td>Friday</td>
+                    <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    </td>
+                </tr>
+    
+                <br>
+                
+            </table>
+        </div>
+        <td><input type="button" onclick="" value="submit form" id="enrollment"></td>
+        
+
+        
+</body>
+</html>
